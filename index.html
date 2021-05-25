@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+    <title>Calculator</title>
+    <script src="script.js" defer></script>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            
+            width: 500px;
+            border-color: black;
+            border-top: 2px;
+        }
+        .numbers {
+            background-color:cyan;
+            border-radius: 5px;
+            padding: 25px;
+            text-align: center;
+            border-style: solid;
+            border-width: 1px;
+            border-color: black;
+            margin: 2px;
+        }
+        .numbers:hover {
+            background-color: darkcyan;
+        }
+        .main_container {
+            width: 500px;
+        }
+        .operator {
+            text-align: center;
+            background-color: darkgray;
+            padding: 25px;
+            border-radius: 5px;
+            border-style: solid;
+            border-width: 1px;
+            margin: 2px;
+        }
+        .operator:hover {
+            background-color: gray;
+        }
+        #display {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            height: 50px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: black;
+            background-color: rgb(240, 225, 206);
+            text-align: right;
+            box-sizing: border-box;
+            padding-top: 10px;
+            font-size: 28px;
+            margin-bottom: 2px;
+            border-radius: 5px;
+        }
+        #clear {
+            background-color: skyblue;
+            border-radius: 5px;
+            margin: 2px;
+            text-align: center;
+            padding-top: 15px;
+            border-style: solid;
+            border-width: 1px;
+        }
+        #clear:hover {
+            background-color: steelblue;
+        }
+        #delete {
+            background-color: skyblue;
+            border-radius: 5px;
+            margin: 2px;
+            text-align: center;
+            padding-top: 15px;
+            border-style: solid;
+            border-width: 1px;
+        }
+        #delete:hover {
+            background-color: steelblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="main_container">
+        
+        
+    <div class="container">
+        <div id="display"></div>
+        <div id="clear">Clear</div>
+        <div id="delete">Delete</div>
+        <div class="numbers all" name="1">1</div>
+        <div class="numbers all" name="2">2</div>
+        <div class="numbers all" name="3">3</div>
+        <div class="operator" id="equals">=</div>
+        <div class="numbers all" name="4">4</div>
+        <div class="numbers all" name="5">5</div>
+        <div class="numbers all" name="6">6</div>
+        <div class="operator all" name="+">+</div>
+        <div class="numbers all" name="7">7</div>
+        <div class="numbers all" name="8">8</div>
+        <div class="numbers all" name="9">9</div>
+        <div class="operator all" name="-">-</div>
+        <div class="numbers all" name=".">.</div>
+        <div class="numbers all" name="0">0</div>
+        <div class="operator all" name="*">*</div>
+        <div class="operator all" name="/">/</div>
+    </div>
+    </div>
+</body>
